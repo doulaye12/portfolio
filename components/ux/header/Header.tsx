@@ -3,7 +3,7 @@ import React from "react";
 
 function Header() {
   return (
-    <div className="bg-gray-600/25 p-4 border-b-1 border-gray-600">
+    <div className="fixed top-0 left-0 right-0 z-50 bg-gray-600/25 p-4 border-b-1 border-gray-600 backdrop-blur-sm">
       <nav className="flex gap-5 justify-center text-gray-400">
         <NavLink iconName="House" href="/" text="Home"></NavLink>
         <NavLink iconName="BookUser" href="/about" text="About"></NavLink>
