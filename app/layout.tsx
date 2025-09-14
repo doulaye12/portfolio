@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header/>
-        <main className="pt-20 h-screen bg-[linear-gradient(to_right,rgba(229,231,235,0.08)_1px,transparent_1px),linear-gradient(to_bottom,rgba(229,231,235,0.08)_1px,transparent_1px)] bg-[size:15px_15px]" >
+        <main className="pt-20 h-screen">
           <div className="m-auto w-5xl">{children}</div>
         </main>
       </body>

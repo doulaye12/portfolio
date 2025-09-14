@@ -17,7 +17,7 @@ interface NavLinkProps {
 function NavLink({ href, text, iconName, iconSize = 16, iconClassName }: NavLinkProps) {
   const pathname = usePathname();
   const isActive = pathname === href;
-  const linkClassName = `${isActive ? "text-white" : "hover:text-white"} inline-flex items-center gap-2 md:mx-4`;
+  const linkClassName = `${isActive ? "text-white" : "hover:text-white"} text-lg inline-flex items-center gap-2 md:mx-4`;
   const IconComponent = iconName
     ? (Icons[iconName as keyof typeof Icons] as unknown as LucideIcon | undefined)
     : undefined;
